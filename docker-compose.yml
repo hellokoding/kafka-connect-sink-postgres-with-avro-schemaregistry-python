@@ -8,7 +8,5 @@ services:
           POSTGRES_PASSWORD: pass
           POSTGRES_USER: hellokoding
           POSTGRES_DB: kafka-sink
-        command: docker-entrypoint.sh -c unix_socket_directories=/var/run/postgresql,/tmp
-        #> /var/lib/postgresql/data/postgresql.conf"
         ports:
           - 5432:5432
